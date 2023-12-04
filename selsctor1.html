@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>선택자-1</title>
+    <style>
+        /* 내부 스타일 시트 */
+        /* 
+            메모위치
+        */
+        /* .title {background-color: aqua;}
+        .title h1 {color:brown;}
+        .title .txt_wrap {background-color:darksalmon;}
+        .title .txt_wrap .txt_1 {background-color:beige;}
+        .title .txt_wrap .txt_1 .sub_title {color:darkred;}
+        .title .txt_wrap .txt_1 .name {color:darkslategray;}
+        .title .txt_wrap .txt_1 .test {color:darkorchid;} */
+
+        /* 폭포 단계별로 선택자만 빈 중괄호로 나열하고 모든 선택자를 작성한 후 중괄호 안 속성:값을 채운다 */
+        .title {}
+        .title h1 {color:red;}
+        .title .txt_wrap {background-color:aqua;}
+        .title .txt_wrap .txt_1 {}
+        .title .txt_wrap .txt_1 .sub_title {}
+        .title .txt_wrap .txt_1 .name {}
+        .title .txt_wrap .txt_1 .test {}
+
+        /* html 시각적인 형태 초기화--> reset css */
+    </style>
+</head>
+<body>
+    <div class="title">
+        <h1>contets</h1>
+        <div class="txt_wrap">
+            <div class="txt_1">
+                <p class="sub_title">티빙 TOP1 프로그램</p>
+                <p class="name">스트릿 우먼 파이터2</p>
+                <h2 class="test">제목 테스트</h2>
+                <p class="test">내용 테스트</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
