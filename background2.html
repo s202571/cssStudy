@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>background2</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <style>
+        body {
+            height: 200vh;
+            background-color: azure;
+            background-image: url(./images/person.png), url(./images/space.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed, scroll;
+            background-position: 30% center, center; 
+            background-size: auto, cover;
+        }
+    </style>
+</head>
+<body>
+    <h1>웹 사이트 이미지 삽입 시 주의사항</h1>
+    <p>
+        * 고해상도 이미지 사용<br>
+        * 고해상도 이미지는 이미지 크기가 매우 크기 때문에 반드시 포토샵으로 image->image size 크기 조정 필수!<br>
+        * 이미지 크기 조정은 이미지 삽입 요소의 크기에 맞춰서 설정하기<br>
+        * 이미지에서 불필요한 영역은 crop 기능으로 삭제해서 사용하기 <br>
+        * 이미지 이름은 의미있는 키워드 사용(한글X 특수문자X 대문자X 공백X)<br>
+        * 이미지는 반드시 html파일 기준 히으; images 폴더를 만들고 별도 관리하기
+    </p>
+</body>
+</html>
