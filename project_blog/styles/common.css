@@ -3,7 +3,7 @@
 .all {
     background-color: #FDF7E4;
     display: flex;
-    flex-wrap: row nowrap;
+    flex-flow: row nowrap;
     justify-content:space-between ;
     text-align: center;
 }
