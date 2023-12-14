@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>반응형 Header 1</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <style>
+       /* min-width mobile 320이상 -> tablet 650이상 -> desktop 1200이상 순서설계 */
+       /* 1~649 */
+       @media screen and (min-width) {}
+       @media screen and (min-width:320px) {
+        .h_bg {
+            background-color: beige;
+            position: sticky; top: 0; right: 0;
+            min-width: 320px;
+        }
+        .h_bg header { height: 64px ; 
+            background-color: aliceblue;
+            display: flex; flex-flow: row nowrap;
+            justify-content: space-between; 
+            align-items: center;
+            position: relative;
+            padding: 0 20px;
+        }
+        .h_bg header h1 {}
+        .h_bg header h1 a {}
+        /* 데스크탑 */
+        .h_bg header .gnb {display: none;}
+        .h_bg header .gnb a {}
+        /* 데스크탑 끝 */
+        .h_bg header .all_nav {}
+        .h_bg header .m_nav {
+            background-color:azure;
+            height: 100vh; width: 226px;
+            position: absolute; top: 64px; right: 0;
+            display: flex; flex-flow: column nowrap;
+            text-align: center;
+            padding: 0 20px;
+        }
+        .h_bg header .m_nav a {
+            border-bottom: 1px dashed;
+            padding: 20px 0;
+        }
+        .h_bg header .m_nav a:last-child {
+            border-bottom:0 ;
+        }
+        main {
+            height: 300vh;
+            background-color: aqua;
+        }
+        footer { width: 100px; background-color: blueviolet;}
+       }
+       @media screen and (min-width:760px) {
+        .h_bg header .gnb {display: flex;}
+        .h_bg header .gnb a {margin-left:16px ;}
+        .h_bg header .all_nav {display: none;}
+        .h_bg header .m_nav {display: none;}
+       }
+       @media screen and (min-width:1200px) {
+        .h_bg header {max-width:1200px; margin: 0 auto;}
+       }
+    </style>
+</head>
+<body>
+    <div class="h_bg">
+        <header>
+            <h1><a href="#">포인핸드</a></h1>
+            <nav class="gnb">
+                <a href="#">포인핸드란?</a>
+                <a href="#">보호소오는길</a>
+                <a href="#">입양문의</a>
+                <a href="#">초보집사 도움말</a>
+                <a href="#">행사/이벤트</a>
+            </nav>
+            <a href="#" class="all_nav"><i class="fa-solid fa-bars"></i></a>
+            <nav class="m_nav">
+                <a href="#">포인핸드란?</a>
+                <a href="#">보호소오는길</a>
+                <a href="#">입양문의</a>
+                <a href="#">초보집사 도움말</a>
+                <a href="#">행사/이벤트</a>
+            </nav>
+        </header>
+    </div>
+    <main>main</main>
+    <footer>footer</footer>
+</body>
+</html>
