@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <title>반응형과 적응형</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <style>
+        /* max-width 큰값-> 작은 값 개발 */
+        body, html { background-color: tomato;} /* 1201~max */
+        /* 조건설정 */
+        /* media 조건 max 또는 min 작성 시; 작성안함 */
+        @media screen and (max-width:1200px) { /* 961~1200 */
+            body, html {background-color:pink;} 
+        }/* 화면 너비가 1200 이하일 때 */
+        @media screen and (max-width:960px){
+            body, html {background-color: cadetblue;}/* 481~960 */
+        }/* 화면 너비가 960 이하일 때 */
+        @media  (max-width:760px) {/* 320(min)~760 */
+            body, html {background-color: plum;}
+        }/* 화면 너비가 760 이하일 때 */
+        @media screen and (max-width:480px) {/* 321~480 */
+            body, html {background-color: paleturquoise;}
+        }/* 화면 너비가 480 이하일 때 */
+        @media screen and (max-width:320px) {/* min~320 */
+            body, html {background-color: black;}
+        }/* 화면 너비가 320 이하일 때 */
+    </style>
+</head>
+<body>
+    <h1>반응형웹 만들기</h1>
+</body>
+</html>

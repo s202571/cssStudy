@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형과 적응형-2</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <style>
+        /* 모바일 -> 데스크탑 순서 설계 */
+        @media screen and (min-width:320px) {/* 320~min */
+            h1{font-size: 0.875rem;}
+        }/* 화면 너비가 320 이상일 경우 */
+        @media screen and (min-width:480px) {/* 480~759 */
+            h1{font-size: 0.95rem;}
+        }/* 화면 너비가 480 이상일 경우 */
+        @media screen and (min-width:760px) {/* 760~959 */
+            h1{font-size: 1.2rem;}
+        }/* 화면 너비가 760 이상일 경우 */
+        @media screen and (min-width:960px) {/* 960~1200 */
+            h1{font-size: 1.5rem;}
+        }/* 화면 너비가 960 이상일 경우 */
+        @media screen and (min-width:1200px) {/* 1200~1599 */
+            h1{font-size: 1.813rem;}
+        }/* 화면 너비가 1200 이상일 경우 */
+        @media screen and (min-width:1600px) {/* 1600~max */
+            h1{font-size: 2.3rem;}
+        }/* 화면 너비가 1600 이상일 경우 */
+    </style>
+</head>
+<body>
+    <h1>반응형과 적응형</h1>
+</body>
+</html>
