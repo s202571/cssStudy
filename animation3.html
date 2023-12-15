@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation-3</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <style>
+        .bg {
+            background-color: #269c26;
+            width: 1000px; height: 700px; margin: 50px auto;
+            position: relative;
+        }
+        .bg img {
+            width: 200px; position: absolute;
+        }
+        .bg .goal1 {
+            left: 20px; top: 20px;
+        }
+        .bg .goal2 {
+            left: 40%; bottom: 20px;
+        }
+        .bg .goal3 {
+            right: 20px; top: 20px;
+        }
+        .bg .ball {
+            width: 100px; height: 100px;
+            transform: translate(70px,119px);/* 시작위치 */
+            animation: goal100 2s infinite;
+            position: absolute;
+            z-index: 999;
+        }
+        .bg .ball img {
+            width: 100px; 
+            animation: ball360 1s linear infinite ;
+        }
+        @keyframes ball360 {
+            0% {transform: rotate(0deg);}
+            100% {transform: rotate(360deg);}
+        }
+        @keyframes right750 {
+            0% {transform:translatex(0)}
+            30% {transform:translatex(750px)}
+        }
+        @keyframes goal100 {
+            0% {transform: translate(70px, 119px);}
+            30% {transform: translate(450px, 478px);}
+            60% {transform: translate(832px, 119px);}
+        }
+    </style>
+</head>
+<body>
+    <div class="bg">
+        <div class="ball"><img src="./animation_icon/football.png" alt=""></div>
+        <img src="./animation_icon/goal.png" alt="" class="goal1">
+        <img src="./animation_icon/goal.png" alt="" class="goal2">
+        <img src="./animation_icon/goal.png" alt="" class="goal3">
+    </div>
+</body>
+</html>

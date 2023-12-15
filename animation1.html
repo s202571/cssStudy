@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <style>
+        .btn1 {
+            background-color: aqua; padding: 30px;
+            font-size: 1rem;
+            transition: all 0.5s 2s;
+            /* transition: background-color 2s;
+            transition: padding 1s;
+            transition: font-size 1.5s; */
+        }
+        .btn1:hover {
+            background-color: yellow; padding: 60px;
+            font-size: 2rem;
+        }
+        /* ----------transform */
+        /* 속성:값 */
+        /* 속성:값(값) */
+        .box {width: 100px; height: 100px; background-color:cadetblue; margin: 10px;}
+        .box1 {transform: scalex(2); transform-origin: left top;}
+        .box2 {transform: rotate(-60deg);}
+        .box3 {transform: skewy(20deg);}
+        .box4 {
+            transform: translateX(200eg);
+            /* transform:translate(100px) */
+        }/* position: relative; left:100px; top:50px 과 같다 */
+        .box5 {transform: scaleY(1.2) rotate(10deg) translateX(50px);}
+        .box6 {transform: rotate(60deg) ; scale:1.2; translate: 100px;}
+    </style>
+</head>
+<body>
+    <ul>
+        <li><button type="button" class="btn1">button</button></li>
+        <li><div class="box box1">A</div></li>
+        <li><div class="box box2">B</div></li>
+        <li><div class="box box3">C</div></li>
+        <li><div class="box box4">D</div></li>
+        <li><div class="box box5">E</div></li>
+        <li><div class="box box6">F</div></li>
+    </ul>
+</body>
+</html>
