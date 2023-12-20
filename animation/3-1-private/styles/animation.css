@@ -1,0 +1,8 @@
+@keyframes right {
+    0% {background-position-x:0}
+    100% {background-position-x:1000px}
+}
+@keyframes retate{
+    0% {transform:rotate(0)}
+    100% {transform:rotate(360deg)}
+}
